@@ -1,5 +1,8 @@
-*{
-    box-sizing: border-box;
+nav{
+    position: sticky;
+    top: 10px;
+    background-color: white;
+    z-index: 2;
 }
 .verticle-line{
     border:1px solid lightgray;
@@ -127,4 +130,35 @@ table{
 }
 td{
   color: #666666;
+}
+td:hover{
+    color: #f8cb45;
+    text-decoration: underline;
+    cursor: pointer;
+}
+@media screen and (max-width:480px){
+    #big-image{
+        display: none !important;
+    }
+    #my-footer-row2,#my-footer-row1{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    }
+    #my-footer-row2-col1,#my-footer-row2-col2,#my-footer-row2-col3{
+        padding: 15px;
+    }
+    #footer-table1, #footer-table2{
+        padding-inline: 20px;
+
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .verticle-line{
+        display: none;
+    }
 }
