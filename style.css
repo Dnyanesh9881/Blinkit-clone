@@ -57,6 +57,35 @@ nav{
      background-color: lightblue;
      font-size:9px ;
 }
+.my-card{
+    display: inline-block !important;
+    width:225px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.my-card>img{
+    display: inline-block !important;
+    margin: auto !important;
+}
+.my-card-title{
+    white-space: wrap;
+}
+.my-card-text{
+    font-size: 14px;
+}
+.price{
+    font-size: 14px;
+    margin: 0px;
+}
+.time{
+    font-size: 12px;
+}
+
+.collection{
+    width: 82vw;
+    margin:auto;
+}
 #my-footer{
     width: 82vw;
     margin: auto;
@@ -136,9 +165,12 @@ td:hover{
     text-decoration: underline;
     cursor: pointer;
 }
-@media screen and (max-width:480px){
+@media screen and (max-width:480px) {
     #big-image{
         display: none !important;
+    }
+    .scroll-bar{
+        margin-top: 25px;
     }
     #my-footer-row2,#my-footer-row1{
     display: flex;
@@ -147,16 +179,56 @@ td:hover{
     }
     #my-footer-row2-col1,#my-footer-row2-col2,#my-footer-row2-col3{
         padding: 15px;
+        margin-top: 15px;
     }
     #footer-table1, #footer-table2{
         padding-inline: 20px;
+        margin-top: 25px;
 
+    }
+    .search-bar{
+        position: static;
     }
     nav{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .verticle-line{
+        display: none;
+    }
+}
+@media screen and (max-width:780px) {
+    #big-image{
+        display: none !important;
+    }
+    .scroll-bar{
+        margin-top: 25px;
+    }
+    #my-footer-row2,#my-footer-row1{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    }
+    #my-footer-row2-col1,#my-footer-row2-col2,#my-footer-row2-col3{
+        padding: 15px;
+        margin-top: 15px;
+    }
+    #footer-table1, #footer-table2{
+        padding-inline: 20px;
+        margin-top: 25px;
+    }
+    
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     .verticle-line{
         display: none;
