@@ -32,6 +32,13 @@ nav{
 .cart-button{
     font-weight: 700;
 }
+.cart-button:hover{
+    background-color: #f8cb45;
+    color: black;
+}
+.login-button:hover{
+        color: #f8cb45;
+}
 .collection-1{
    padding-inline: 7.5vw;
 }
